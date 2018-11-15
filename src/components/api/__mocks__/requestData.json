@@ -1,0 +1,11 @@
+{
+    "amount":10.0000,
+    "currencyCode":"GBP",
+    "donationDate":"\/Date(1538352000000+0000)\/",
+    "donorDisplayName":"John Smith",
+    "donorLocalAmount":10.000000,
+    "donorLocalCurrencyCode":"GBP",
+    "estimatedTaxReclaim":0.0000,
+    "imageUrl":"https:\/\/www.justgiving.com\/content\/images\/graphics\/icons\/avatars\/facebook-avatar.gif",
+    "message":"Lorem Ipsum"
+}
