@@ -4,13 +4,13 @@
 
 import React, { Component } from 'react';
 import '../assets/App.css';
-import Test from './styled/Test';
+import DonationList from './DonationList';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Test>Test</Test>
+        <DonationList />
       </div>
     );
   }
