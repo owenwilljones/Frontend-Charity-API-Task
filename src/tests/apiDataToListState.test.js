@@ -21,7 +21,7 @@ describe('DonationList API call on mount', async () => {
     expect(donationListWrapper.state('donations')).toHaveProperty(amount, '10.00');
     expect(donationListWrapper.state('donations')).toHaveProperty(donationDate, 'Thursday, 15/11/2018, 19:06');
     expect(donationListWrapper.state('donations')).toHaveProperty(donorDisplayName, 'John Smith');
-    expect(donationListWrapper.state('donations')).toHaveProperty(imgUrl, 'https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif');
+    expect(donationListWrapper.state('donations')).toHaveProperty(imageUrl, 'https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif');
     expect(donationListWrapper.state('donations')).toHaveProperty(message, 'Lorem Ipsum');
   });
 });
