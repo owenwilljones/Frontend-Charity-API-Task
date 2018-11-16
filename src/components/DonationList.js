@@ -7,6 +7,14 @@
 import React, { Component } from 'react';
 import request from './api/request';
 import getSymbolFromCurrency from 'currency-symbol-map';
+import Wrapper from './styled/utils/Wrapper';
+import Card from './styled/Card/Card';
+import CardContainer from './styled/Card/CardContainer';
+import CardImg from './styled/Card/CardImg';
+import CardName from './styled/Card/CardName';
+import CardDate from './styled/Card/CardDate';
+import CardAmount from './styled/Card/CardAmount';
+import CardMessage from './styled/Card/CardMessage';
 
 class DonationList extends Component {
   constructor() {
@@ -56,18 +64,20 @@ class DonationList extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Latest Donations</h1>
-        {this.state.donations.map((donor, key) => (
-          <div key={key}>
-            <img src={donor.imageUrl} />
-            <h2>{donor.donorDisplayName}</h2>
-            <div>{donor.amount}</div>
-            <div>{donor.donationDate}</div>
-            <div>{donor.message}</div>
-          </div>
-        ))}
-      </div>
+      <Wrapper>
+        <CardContainer>
+          {this.state.donations.map((donor, key) => (
+            <Card key={key}>
+              <CardImg src={donor.imageUrl} />
+              <CardName>{donor.donorDisplayName}</CardName>
+              <CardAmount>{donor.amount}</CardAmount>
+              <CardDate>{donor.donationDate}</CardDate>
+              
+              <CardMessage>{donor.message}</CardMessage>
+            </Card>
+          ))}
+        </CardContainer>
+      </Wrapper>
     );
   }
 }
